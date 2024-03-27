@@ -1,0 +1,104 @@
+header form .btn {
+  background: #8c68cd;
+}
+header form .btn:hover {
+  background-color: #a88ae0;
+  color: #ffff;
+}
+.slidebar .nav-link {
+  color: #212529;
+}
+.sidebar .nav-link:hover,
+.sidebar .nav-link:focus {
+  background-color: #f0f0f0;
+  font-weight: 600;
+}
+.card1 {
+  background-color: #b4eaf6;
+}
+.card2 {
+  background-color: #efcfff;
+}
+.card3 {
+  background-color: #ffe69c;
+}
+.card i {
+  font-size: 1.5rem;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #03abae; 
+  border-radius: 10px;
+  border-color: rgb(2, 164, 164);
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-color: aqua;
+  color: #003334;
+}
+.class-1{
+  background-color: #8c68cd;
+}
+.display-container {
+  text-align: left;
+  display: none;
+  background-color: #039a9c; 
+  color: #fff;
+  padding: 10px;
+  border-radius: 30px;
+}
+td{
+  width: 350px;
+  font-size: 20px;
+  color: black;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+table{
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.txt{
+  text-align: left;
+}
+
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  #h{
+    color: black;
+    font-size: 22px;
+    margin-top: 30px;
+  }

@@ -1,0 +1,402 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .custom-card {
+            width: 70%;
+            margin: -70px auto;
+            border: 2px solid rgb(187, 194, 87);
+            border-radius: 15px;
+        }
+
+        .custom-card1 {
+            width: 70%;
+            margin: 150px 430px;
+            border: 2px solid rgb(187, 194, 87);
+            border-radius: 15px;
+        }
+
+        .custom-card img {
+            width: 100%;
+            margin: 5px 0;
+            border-radius: 25px;
+        }
+
+        .custom-card1 img {
+            width: 100%;
+            margin: 5px 0;
+            border-radius: 25px;
+        }
+
+        .about {
+            margin-top: 10px;
+            background-color: #26453E;
+            height: 70px;
+            overflow: hidden;
+        }
+
+        .about p {
+            color: #fff;
+            font-size: 30px;
+
+            margin: 10px 600px;
+        }
+
+        .footer-distributed {
+            background: #666;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
+            font: bold 16px sans-serif;
+            padding: 55px 50px;
+            margin-top: 100px;
+            height: 255px;
+        }
+
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+
+
+        .footer-distributed .footer-left {
+            width: 40%;
+        }
+
+        .footer-distributed h3 {
+            color: #ffffff;
+            font: normal 36px 'Open Sans', cursive;
+            margin: 0;
+        }
+
+        .footer-distributed h3 span {
+            color: lightseagreen;
+        }
+
+
+        .footer-distributed .footer-links {
+            color: #ffffff;
+            margin: 20px 0 12px;
+            padding: 0;
+        }
+
+        .footer-distributed .footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            font-weight: 400;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .footer-distributed .footer-company-name {
+            color: #222;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+
+        .footer-distributed .footer-center {
+            width: 35%;
+        }
+
+        .footer-distributed .footer-center i {
+            background-color: #33383b;
+            color: #ffffff;
+            font-size: 25px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 42px;
+            margin: 10px 15px;
+            vertical-align: middle;
+        }
+
+        .footer-distributed .footer-center i.fa-envelope {
+            font-size: 17px;
+            line-height: 38px;
+        }
+
+        .footer-distributed .footer-center p {
+            display: inline-block;
+            color: #ffffff;
+            font-weight: 400;
+            vertical-align: middle;
+            margin: 0;
+        }
+
+        .footer-distributed .footer-center p span {
+            display: block;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 2;
+        }
+
+        .footer-distributed .footer-center p a {
+            color: lightseagreen;
+            text-decoration: none;
+            ;
+        }
+
+        .footer-distributed .footer-links a:before {
+            content: "|";
+            font-weight: 300;
+            font-size: 20px;
+            left: 0;
+            color: #fff;
+            display: inline-block;
+            padding-right: 5px;
+        }
+
+        .footer-distributed .footer-links .link-1:before {
+            content: none;
+        }
+
+
+
+        .footer-distributed .footer-right {
+            width: 20%;
+        }
+
+        .footer-distributed .footer-company-about {
+            line-height: 20px;
+            color: #92999f;
+            font-size: 13px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .footer-distributed .footer-company-about span {
+            display: block;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .footer-distributed .footer-icons {
+            margin-top: 25px;
+        }
+
+        .footer-distributed .footer-icons a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            background-color: #33383b;
+            border-radius: 2px;
+
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
+
+            margin-right: 3px;
+            margin-bottom: 5px;
+        }
+
+
+        @media (max-width: 880px) {
+
+            .footer-distributed {
+                font: bold 14px sans-serif;
+            }
+
+            .footer-distributed .footer-left,
+            .footer-distributed .footer-center,
+            .footer-distributed .footer-right {
+                display: block;
+                width: 100%;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+
+            .footer-distributed .footer-center i {
+                margin-left: 0;
+            }
+
+        }
+
+        .about i {
+            font-size: 40px;
+            position: absolute;
+            top: 8%;
+            left: 20px;
+            transform: translateY(-50%);
+            color: white;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="about">
+        <p>Our Team</p>
+        <a href="about.html"><i class="fas fa-home"></i></a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <div class="card custom-card1">
+                    <div class="card-body">
+                        <img src="tea.jpg" alt="Tea Image">
+                        <h5 class="card-title">M.DIVYA</h5>
+                        <p class="card-text">CEO</p>
+                        <i class="fa fa-instagram" style="color:rgb(214, 84, 84);"></i>
+                        &nbsp
+                        <i class="fa fa-facebook" style="color:blue;"></i>
+                        &nbsp
+                        <i class="fab fa-twitter" style="color:#1DA1F2;"></i>
+                        &nbsp
+                        <i class="fa fa-whatsapp" style="color:green"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <div class="card custom-card">
+                    <div class="card-body">
+                        <img src="tea.jpg" alt="Tea Image">
+                        <h5 class="card-title">Farheen</h5>
+                        <p class="card-text">DEVELOPER</p>
+                        <i class="fa fa-instagram" style="color:rgb(214, 84, 84);"></i>
+                        &nbsp
+                        <i class="fa fa-facebook" style="color:blue;"></i>
+                        &nbsp
+                        <i class="fab fa-twitter" style="color:#1DA1F2;"></i>
+                        &nbsp
+                        <i class="fa fa-whatsapp" style="color:green"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card custom-card">
+                    <div class="card-body">
+                        <img src="tea2.jpg" alt="Tea Image">
+                        <h5 class="card-title">Tharun</h5>
+                        <p class="card-text">DEVELOPER.</p>
+                        <i class="fa fa-instagram" style="color:rgb(214, 84, 84);"></i>
+                        &nbsp
+                        <i class="fa fa-facebook" style="color:blue;"></i>
+                        &nbsp
+                        <i class="fab fa-twitter" style="color:#1DA1F2;"></i>
+                        &nbsp
+                        <i class="fa fa-whatsapp" style="color:green"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card custom-card">
+                    <div class="card-body">
+                        <img src="tea.jpg" alt="Tea Image">
+                        <h5 class="card-title">DEVYANI</h5>
+                        <p class="card-text">Documentation.</p>
+                        <i class="fa fa-instagram" style="color:rgb(214, 84, 84);"></i>
+                        &nbsp
+                        <i class="fa fa-facebook" style="color:blue;"></i>
+                        &nbsp
+                        <i class="fab fa-twitter" style="color:#1DA1F2;"></i>
+                        &nbsp
+                        <i class="fa fa-whatsapp" style="color:green"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card custom-card">
+                    <div class="card-body">
+                        <img src="tea2.jpg" alt="Tea Image">
+                        <h5 class="card-title">MAHESH</h5>
+                        <p class="card-text">Documentation</p>
+                        <i class="fa fa-instagram" style="color:rgb(214, 84, 84);"></i>
+                        &nbsp
+                        <i class="fa fa-facebook" style="color:blue;"></i>
+                        &nbsp
+                        <i class="fab fa-twitter" style="color:#1DA1F2;"></i>
+                        &nbsp
+                        <i class="fa fa-whatsapp" style="color:green"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>work hunter unite</h3>
+            <img src="logo.jpg" style="width:150px;">
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+
+                <a href="#">posts</a>
+
+                <a href="C:\Users\FARHEEN\Desktop\feedback.html">feedback</a>
+
+                <a href="#">About</a>
+
+                <a href="#">Faq</a>
+
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Work Hunter © 2023</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>444 ongole</span> rgukt-ongole</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+1.555.555.5555</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@company.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Our mission is to make everyone happy and employed
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
